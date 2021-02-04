@@ -25,6 +25,8 @@ require_once 'acao/conexao.php'
 				<th>Endereço:</th>
 				<th>Telefone 1:</th>
 				<th>Telefone 2:</th>
+				<th></th>
+				<th></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -43,14 +45,14 @@ require_once 'acao/conexao.php'
 					<td><?php echo $dados['telefone1']; ?></td>
 					<td><?php echo $dados['telefone2']; ?></td>
 					<td>
-						<button>
+						<button class="icone-editar">
 							<a href="editar.php?id=<?php echo $dados['id'];?>"><i class="fas fa-pencil-alt"></i></a>
 						</button>
 					</td>
 					<td>
 						<form action="acao/deletar.php" method="POST">
 							<input type="hidden" name="id" value="<?php echo $dados['id']; ?>">
-							<button type="submit" name="btn-deletar">
+							<button class="icone-deletar" type="submit" name="btn-deletar">
 								<i class="fas fa-trash-alt"></i>
 							</button>
 						</form>
@@ -64,7 +66,8 @@ require_once 'acao/conexao.php'
 	</table>
 
 	<br/><br/>
-
-	<a href="adicionar.php">Adicionar Cliente</a>
+	<div  class="btn-adicionar">
+		<a href="adicionar.php">Adicionar Cliente</a>
+	</div>
 </body>
 </html>

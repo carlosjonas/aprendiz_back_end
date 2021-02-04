@@ -1,9 +1,12 @@
+/*Deixando os layouts de navegadores como padrão*/
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
+/*Estilizando todo o meu body, definindo minha fonte e meu display como flex para ficar centralizado e em colunas
+*/
 body{
 	display: flex;
 	flex-direction: column;
@@ -14,5 +17,59 @@ body{
 }
 
 h1{
-	
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+table, th, td {
+  border-bottom: 1px solid #000;
+}
+
+th, td {
+  padding: 10px;
+}
+
+.icone-editar{
+	width: 30px;
+	height: 30px;
+	background-color: #ffa500;
+	border-radius: 15px;
+}
+.icone-deletar{
+	width: 30px;
+	height: 30px;
+	background-color: #dd2417;
+	border-radius: 15px;
+	cursor: pointer;
+}
+.icone-editar a,
+.icone-deletar a{
+	text-decoration: none;
+	color: #545454;
+}
+
+
+/*Aqui eu estilizo o meu botão de adicionar um novo usuário*/
+.btn-adicionar{
+	padding: 10px;
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: #4acb15;	
+	text-align: center;
+}
+.btn-adicionar a{
+	text-decoration: none;
+	color: #000;
+}
+/*
+a{
+	padding: 10px;
+	width: 120px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: skyblue;
+}
+input{
+	width: 300px;
 }
