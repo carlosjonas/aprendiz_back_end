@@ -3,8 +3,6 @@
 require_once 'acao/conexao.php'
  ?>
 
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,8 +30,8 @@ require_once 'acao/conexao.php'
 		<tbody>
 			<?php 
 				$sql= "SELECT * FROM usuarios";
-				$resultado = mysqli_query($conexao, $sql);
-				while ($dados = mysqli_fetch_array($resultado)) {
+				$result = mysqli_query($conexao, $sql);
+				while ($dados = mysqli_fetch_array($result)) {
 				
 			 ?>
 				<tr>
