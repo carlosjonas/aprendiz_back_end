@@ -1,3 +1,10 @@
+<?php 
+//conexao com o banco
+require_once 'acao/conexao.php'
+ ?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,17 +30,27 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<td>Jonas</td>
-				<td>078736551342</td>
-				<td>20086085870</td>
-				<td>carlosjonasfon@gmail.com</td>
-				<td>Rua Santa Inês, 1532</td>
-				<td>(85) 988873961</td>
-				<td>(85) 985430012</td>
-				<td><a href=""><i class="fas fa-pencil-alt"></i></a></td>
-				<td><a href=""><i class="fas fa-trash-alt"></i></a></td>
-			</tr>
+			<?php 
+				$sql= "SELECT * FROM usuarios";
+				$resultado = mysqli_query($conexao, $sql);
+				while ($dados = mysqli_fetch_array($resultado)) {
+				
+			 ?>
+				<tr>
+					<td><?php echo $dados['nome']; ?></td>
+					<td><?php echo $dados['rg']; ?></td>
+					<td><?php echo $dados['cpf']; ?></td>
+					<td><?php echo $dados['email']; ?></td>
+					<td><?php echo $dados['endereco']; ?></td>
+					<td><?php echo $dados['telefone1']; ?></td>
+					<td><?php echo $dados['telefone2']; ?></td>
+					<td><a href="editar.php?id=<?php echo $dados['id'];?>"><i class="fas fa-pencil-alt"></i></a></td>
+					<td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+				</tr>
+
+			<?php 
+				}
+			?>
 		</tbody>
 	</table>
 

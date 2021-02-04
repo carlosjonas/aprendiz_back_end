@@ -14,7 +14,7 @@ if (isset($_POST['btn-enviar'])) {
 }
 
 // criando a linha de sql para inserir dados no meu banco
-$sql = "INSERT INTO usuarios (nome, rg, cpf, email, endereco, telefone1, telefone2) VALUES('$nome', '$rg', '$cpf', '$email', '$endereco', 'telefone1', telefone2 )";
+$sql = "INSERT INTO usuarios (nome, rg, cpf, email, endereco, telefone1, telefone2) VALUES('$nome', '$rg', '$cpf', '$email', '$endereco', '$telefone1', '$telefone2' )";
 
 //verificando se os dados foram adicionados com sucesso ao banco
 if(mysqli_query($conexao,$sql)) {
@@ -22,7 +22,7 @@ if(mysqli_query($conexao,$sql)) {
 	header('Location: ../home.php');
 }else{
 	echo "Erro ao cadastrar";
-	header('Location: home.php');
+	header('Location: ../home.php');
 }
 
  ?>

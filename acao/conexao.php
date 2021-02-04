@@ -11,10 +11,12 @@ $conexao = mysqli_connect($servername, $username, $password, $database);
 
 //Verificando se não há erros na minha conexão
 if (!$conexao) {
-      die("Erro na conexão: " . mysqli_connect_error());
+     die("Erro na conexão: " . mysqli_connect_error());
+}else{
+	echo "Sucesso na conexão";
 }
  
-echo "Secesso na conexão";
+
 
 
  ?>
