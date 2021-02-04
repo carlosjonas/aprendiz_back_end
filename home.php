@@ -42,8 +42,19 @@ require_once 'acao/conexao.php'
 					<td><?php echo $dados['endereco']; ?></td>
 					<td><?php echo $dados['telefone1']; ?></td>
 					<td><?php echo $dados['telefone2']; ?></td>
-					<td><a href="editar.php?id=<?php echo $dados['id'];?>"><i class="fas fa-pencil-alt"></i></a></td>
-					<td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+					<td>
+						<button>
+							<a href="editar.php?id=<?php echo $dados['id'];?>"><i class="fas fa-pencil-alt"></i></a>
+						</button>
+					</td>
+					<td>
+						<form action="acao/deletar.php" method="POST">
+							<input type="hidden" name="id" value="<?php echo $dados['id']; ?>">
+							<button type="submit" name="btn-deletar">
+								<i class="fas fa-trash-alt"></i>
+							</button>
+						</form>
+					</td>
 				</tr>
 
 			<?php 
