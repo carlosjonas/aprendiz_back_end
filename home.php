@@ -3,7 +3,7 @@
 <head>
 	<title>CRUD</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 	<meta id="viewport" name="viewport" content="width=device-width" />
 	<script src="https://kit.fontawesome.com/7b2c34bc68.js" crossorigin="anonymous"></script>
 </head>

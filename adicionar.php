@@ -1,9 +1,19 @@
+<?php	
+//verificação do botão
+if (isset($_POST['btn-cadastrar'])) {
+	echo "Clicou !";
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>CRUD</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 	<meta id="viewport" name="viewport" content="width=device-width" />
 	<script src="https://kit.fontawesome.com/7b2c34bc68.js" crossorigin="anonymous"></script>
 </head>
@@ -48,6 +58,7 @@
 			<input type="text" name="telefone2" id="telefone2" required><br/><br/>
 
 			<button type="submit" name="btn-cadastrar"> Adicionar novo cliente</button>
+			<a href="home.php">Cancelar cadastro</a>
 
 		</fieldset>
 	</form>
