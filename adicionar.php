@@ -57,7 +57,7 @@ if (isset($_POST['btn-cadastrar'])) {
 			</label><br/>
 			<input type="text" name="telefone2" id="telefone2" required><br/><br/>
 
-			<button type="submit" name="btn-cadastrar"> Adicionar novo cliente</button>
+			<button type="submit" name="btn-enviar"> Adicionar novo cliente</button>
 			<a href="home.php">Cancelar cadastro</a>
 
 		</fieldset>
