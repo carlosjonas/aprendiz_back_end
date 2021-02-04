@@ -39,6 +39,6 @@
 
 	<br/><br/>
 
-	<a href="cadastrar.php">Adicionar Cliente</a>
+	<a href="adicionar.php">Adicionar Cliente</a>
 </body>
 </html>
