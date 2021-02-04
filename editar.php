@@ -28,7 +28,7 @@ if (isset($_GET['id'])) {
 
 		<br/>
 
-	<form method="POST" action="acao/update.php">
+	<form method="POST" action="acao/alterar.php">
 		<fieldset>
 			<input type="hidden" name="id" value="<?php echo $dados['id'];?>"/>
 			<label>
