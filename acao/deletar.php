@@ -14,10 +14,10 @@
 		// Verificando se minha conexão está boa e exibindo
 		if(mysqli_query($conexao,$sql)) {
 			echo "<script>alert('Deletado com Sucesso!');</script>";
-			header('Location: ../home.php');
+			echo "<script>window.location='../home.php';</script>";
 		}else{
 			echo "<script>alert('Erro ao deletar!');</script>";
-			header('Location: ../home.php');
+			echo "<script>window.location='../home.php';</script>";
 		}
 	}
 

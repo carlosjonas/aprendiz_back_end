@@ -20,10 +20,10 @@
 
 		// Verificando se minha conexão teve sucesso e exibindo as mensagens caso dê certo ou erro
 		if(mysqli_query($conexao,$sql)) {
-			echo "<script>return confirm('Cadastro alterado')</script>";
-			header('Location: ../home.php');
+			echo "<script>alert('Alterado com Sucesso!');</script>";
+			echo "<script>window.location='../home.php';</script>";
 		}else{
-			echo "<script>return confirm('Erro ao atualizar');</script>";
+			echo "<script>return confirm('Erro ao alterar');</script>";
 			header('Location: ../home.php');
 		}
 	}

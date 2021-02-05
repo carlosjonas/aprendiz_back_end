@@ -19,10 +19,12 @@
 	//verificando se os dados foram adicionados com sucesso ao banco
 	if(mysqli_query($conexao,$sql)) {
 		echo "<script>alert('Cadastrado com Sucesso!');</script>";
-		header('Location: ../home.php');
+		echo "<script>window.location='../home.php';</script>";
+		//header('Location: ../home.php');
 	}else{
 		echo "<script>alert('Erro ao cadastrar!');</script>";
-		header('Location: ../home.php');
+		echo "<script>window.location='../home.php';</script>";
+		//header('Location: ../home.php');
 }
 
  ?>

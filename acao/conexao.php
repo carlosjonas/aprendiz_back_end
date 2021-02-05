@@ -11,12 +11,5 @@
 	//Verificando se não há erros na minha conexão
 	if (!$conexao) {
 	    die("Erro na conexão: " . mysqli_connect_error());
-	}else{
-		// Exibição da mensagem de sucesso
-		echo "";
 	}
-	 
-
-
-
  ?>
