@@ -61,7 +61,7 @@
 
 			<!--Botão de adicionar novo usuário que manda as informações pro criar.php-->
 			<button type="submit" class="btn-adicionar" name="btn-enviar">
-				<a href="home.php"> Adicionar Novo Usuário</a>
+				Adicionar Novo Usuário
 			</button>
 			<!--Botão de cancelar o cadastro onde volta pra página home -->
 			<button class="btn-cancelar">
