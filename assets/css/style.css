@@ -22,11 +22,11 @@ h1{
 }
 
 table, th, td {
-  border-bottom: 1px solid #000;
+	border-bottom: 1px solid #000;
 }
 
 th, td {
-  padding: 10px;
+	padding: 10px;
 }
 
 .icone-editar{

@@ -1,17 +1,17 @@
 <?php
-//Linkando com a conexão
-require_once 'acao/conexao.php';
+	//Linkando com a conexão
+	require_once 'acao/conexao.php';
 
-if (isset($_GET['id'])) {
-	$id = mysqli_escape_string($conexao, $_GET['id']);
+	if (isset($_GET['id'])) {
+		$id = mysqli_escape_string($conexao, $_GET['id']);
 
-	$sql = "SELECT * FROM usuarios WHERE id = '$id'";
-	$result = mysqli_query($conexao, $sql);
-	$dados = mysqli_fetch_array($result);
-}
-
+		$sql = "SELECT * FROM usuarios WHERE id = '$id'";
+		$result = mysqli_query($conexao, $sql);
+		$dados = mysqli_fetch_array($result);
+	}
 
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,26 +42,32 @@ if (isset($_GET['id'])) {
 				* RG:
 			</label><br/>
 			<input type="text" name="rg" id="rg" maxlength="12" placeholder="9999999999-9" onkeyup="mascara_rg()"required value="<?php echo $dados['rg'];?>"><br/><br/>
+
 			<label>
 				* CPF:
 			</label><br/>
 			<input type="text" name="cpf" id="cpf" maxlength="14" onkeyup="mascara_cpf()" placeholder="999.999.999-99" required value="<?php echo $dados['cpf'];?>"><br/><br/>
+
 			<label>
 				* EMAIL:
 			</label><br/>
 			<input type="text" name="email" id="email" required value="<?php echo $dados['email'];?>"><br/><br/>
+
 			<label>
 				* ENDEREÇO:
 			</label><br/>
 			<input type="text" name="endereco" id="endereco" required value="<?php echo $dados['endereco'];?>"><br/><br/>
+
 			<label>
 				* TELEFONE 1:
 			</label><br/>
 			<input type="text" name="telefone1" id="telefone1" onkeyup="mascara_telefone1()" maxlength="14" placeholder="(99)99999-9999"  required value="<?php echo $dados['telefone1'];?>"><br/><br/>
+
 			<label>
 				  TELEFONE 2:
 			</label><br/>
 			<input type="text" name="telefone2" id="telefone2" onkeyup="mascara_telefone2()" maxlength="14" placeholder="(99)99999-9999"  value="<?php echo $dados['telefone2'];?>"><br/><br/>
+			
 
 			<button type="submit" class="btn-adicionar" name="btn-editar"> Editar cliente</button>
 			<button class="btn-cancelar">

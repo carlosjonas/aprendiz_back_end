@@ -1,4 +1,4 @@
-function mascara_rg() {
+		function mascara_rg() {
 			var rg  = document.getElementById('rg')
 			if (rg.value.length == 10) {
 				rg.value = rg.value+'-'

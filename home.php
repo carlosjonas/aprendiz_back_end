@@ -1,7 +1,7 @@
 <?php 
-//conexao com o banco
-require_once 'acao/conexao.php'
- ?>
+	//conexao com o banco
+	require_once 'acao/conexao.php'
+?>
 
 <!DOCTYPE html>
 <html>
@@ -66,8 +66,10 @@ require_once 'acao/conexao.php'
 	</table>
 
 	<br/><br/>
+
 	<div  class="btn-adicionar">
 		<a href="adicionar.php">Adicionar Cliente</a>
 	</div>
+	
 </body>
 </html>
