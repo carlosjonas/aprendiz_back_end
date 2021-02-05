@@ -32,12 +32,12 @@
 			<label>
 				* RG:
 			</label><br/>
-			<input type="text" name="rg" id="rg" maxlength="12" placeholder="9999999999-9" onkeyup="mascara_rg()" required><br/><br/>
+			<input type="text" name="rg" id="rg" maxlength="12" placeholder="9999999999-9" onkeypress="mascara_rg(this)" required><br/><br/>
 
 			<label>
 				* CPF:
 			</label><br/>
-			<input type="text" name="cpf" id="cpf" maxlength="14" onkeyup="mascara_cpf()" placeholder="999.999.999-99" required><br/><br/>
+			<input type="text" name="cpf" id="cpf" maxlength="14" onkeypress="mascara_cpf(this)" placeholder="999.999.999-99" required><br/><br/>
 
 			<label>
 				* EMAIL:
@@ -52,12 +52,12 @@
 			<label>
 				* TELEFONE 1:
 			</label><br/>
-			<input type="text" name="telefone1"  id="telefone1" onkeyup="mascara_telefone1()" maxlength="14" placeholder="(99)99999-9999" required><br/><br/>
+			<input type="text" name="telefone1"  id="telefone1" onkeypress="mascara_telefone1(this)" maxlength="14" placeholder="(99)99999-9999" required><br/><br/>
 
 			<label>
 				  TELEFONE 2:
 			</label><br/>
-			<input type="text" name="telefone2" id="telefone2" onkeyup="mascara_telefone2()" maxlength="14" placeholder="(99)99999-9999"><br/><br/>
+			<input type="text" name="telefone2" id="telefone2" onkeypress="mascara_telefone2(this)" maxlength="14" placeholder="(99)99999-9999"><br/><br/>
 
 			<!--Botão de adicionar novo usuário que manda as informações pro criar.php-->
 			<button type="submit" class="btn-adicionar" name="btn-enviar">
