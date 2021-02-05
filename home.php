@@ -60,7 +60,7 @@
 							<!--input escondido para apontar pro meu deletar e saber qual registro estou pegando-->
 							<input type="hidden" name="id" value="<?php echo $dados['id']; ?>">
 							<!--Meu botão de Deletar, só confirmo com um return pra não acontecer de clicarem sem querer-->
-							<button class="icone-deletar" type="submit" onclick="return confirm('Tem certeza que deseja editar este registro?')" name="btn-deletar">
+							<button class="icone-deletar" type="submit" onclick="return confirm('Tem certeza que deseja excluir este registro?')" name="btn-deletar">
 								<i class="fas fa-trash-alt"></i>
 							</button>
 						</form>
