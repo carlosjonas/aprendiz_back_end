@@ -10,10 +10,10 @@ if (isset($_POST['btn-deletar'])) {
 	$sql = "DELETE FROM usuarios WHERE id = '$id'";
 
 	if(mysqli_query($conexao,$sql)) {
-		echo "Deletado com Sucesso";
+		echo "<script>alert('Deletado com Sucesso!');</script>";
 		header('Location: ../home.php');
 	}else{
-		echo "Erro ao deletar";
+		echo "<script>alert('Erro ao deletar!');</script>";
 		header('Location: ../home.php');
 }
 }

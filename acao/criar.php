@@ -18,10 +18,10 @@ $sql = "INSERT INTO usuarios (nome, rg, cpf, email, endereco, telefone1, telefon
 
 //verificando se os dados foram adicionados com sucesso ao banco
 if(mysqli_query($conexao,$sql)) {
-	echo "Cadastrado com Sucesso";
+	echo "<script>alert('Cadastrado com Sucesso!');</script>";
 	header('Location: ../home.php');
 }else{
-	echo "Erro ao cadastrar";
+	echo "<script>alert('Erro ao cadastrar!');</script>";
 	header('Location: ../home.php');
 }
 

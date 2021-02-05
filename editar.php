@@ -36,16 +36,16 @@ if (isset($_GET['id'])) {
 			<label>
 				* NOME:
 			</label><br/>
-			<input type="text" name="nome" id="nome" required value="<?php echo $dados['nome'];?>"><br/><br/>
+			<input type="text" name="nome" id="nome" placeholder="Nome" required value="<?php echo $dados['nome'];?>"><br/><br/>
 
 			<label>
 				* RG:
 			</label><br/>
-			<input type="text" name="rg" id="rg" required value="<?php echo $dados['rg'];?>"><br/><br/>
+			<input type="text" name="rg" id="rg" maxlength="12" placeholder="9999999999-9" onkeyup="mascara_rg()"required value="<?php echo $dados['rg'];?>"><br/><br/>
 			<label>
 				* CPF:
 			</label><br/>
-			<input type="text" name="cpf" id="cpf" required value="<?php echo $dados['cpf'];?>"><br/><br/>
+			<input type="text" name="cpf" id="cpf" maxlength="14" onkeyup="mascara_cpf()" placeholder="999.999.999-99" required value="<?php echo $dados['cpf'];?>"><br/><br/>
 			<label>
 				* EMAIL:
 			</label><br/>
@@ -57,11 +57,11 @@ if (isset($_GET['id'])) {
 			<label>
 				* TELEFONE 1:
 			</label><br/>
-			<input type="text" name="telefone1" id="telefone1" required value="<?php echo $dados['telefone1'];?>"><br/><br/>
+			<input type="text" name="telefone1" id="telefone1" onkeyup="mascara_telefone1()" maxlength="14" placeholder="(99)99999-9999"  required value="<?php echo $dados['telefone1'];?>"><br/><br/>
 			<label>
 				  TELEFONE 2:
 			</label><br/>
-			<input type="text" name="telefone2" id="telefone2" required value="<?php echo $dados['telefone2'];?>"><br/><br/>
+			<input type="text" name="telefone2" id="telefone2" onkeyup="mascara_telefone2()" maxlength="14" placeholder="(99)99999-9999"  value="<?php echo $dados['telefone2'];?>"><br/><br/>
 
 			<button type="submit" class="btn-adicionar" name="btn-editar"> Editar cliente</button>
 			<button class="btn-cancelar">

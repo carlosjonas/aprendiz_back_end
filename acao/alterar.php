@@ -17,10 +17,10 @@ if (isset($_POST['btn-editar'])) {
 	$sql = "UPDATE usuarios SET nome = '$nome',rg = '$rg',cpf = '$cpf',email = '$email',endereco = '$endereco',telefone1 = '$telefone1',telefone2 = '$telefone2' WHERE id = '$id'";
 
 	if(mysqli_query($conexao,$sql)) {
-		echo "Atualizado com Sucesso";
+		echo "<script>alert('Alterado com Sucesso!');</script>";
 		header('Location: ../home.php');
 	}else{
-		echo "Erro ao atualizar";
+		echo "<script>alert('Erro ao Atualizar!');</script>";
 		header('Location: ../home.php');
 }
 }

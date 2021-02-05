@@ -13,7 +13,8 @@ $conexao = mysqli_connect($servername, $username, $password, $database);
 if (!$conexao) {
      die("Erro na conexão: " . mysqli_connect_error());
 }else{
-	echo "Sucesso na conexão";
+	// Exibição da mensagem de sucesso
+	echo "";
 }
  
 

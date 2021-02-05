@@ -44,7 +44,7 @@
 			<label>
 				* TELEFONE 1:
 			</label><br/>
-			<input type="text" name="telefone1" onkeyup="mascara_telefone1()" id="telefone1" maxlength="14" placeholder="(99)99999-9999" required><br/><br/>
+			<input type="text" name="telefone1"  id="telefone1" onkeyup="mascara_telefone1()" maxlength="14" placeholder="(99)99999-9999" required><br/><br/>
 			<label>
 				  TELEFONE 2:
 			</label><br/>
