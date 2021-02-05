@@ -19,6 +19,8 @@ if (isset($_GET['id'])) {
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 	<meta id="viewport" name="viewport" content="width=device-width" />
+	<script type="text/javascript" src="assets/js/mascaras.js">
+	</script>
 	<script src="https://kit.fontawesome.com/7b2c34bc68.js" crossorigin="anonymous"></script>
 </head>
 <body>

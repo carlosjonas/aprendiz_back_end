@@ -57,13 +57,14 @@ th, td {
 	border-radius: 10px;
 	background-color: #4acb15;	
 	text-align: center;
+	cursor: pointer;
 }
 .btn-adicionar a{
 	text-decoration: none;
 	color: #000;
 }
 
-/*ADICIONAR.PHP - esta parte do código estliza mais a parte do meu home.php*/
+/*ADICIONAR.PHP e ADICIONAR.PHP - esta parte do código estliza mais a parte do meu adicionar.php e o editar.php*/
 em{
 	color: #ffa500;
 }
