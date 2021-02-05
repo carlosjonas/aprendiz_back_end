@@ -9,9 +9,9 @@
 	<script src="https://kit.fontawesome.com/7b2c34bc68.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<h1>Adicionar CLientes</h1>
+	<h1>Adicionar Clientes</h1>
 
-	<p>Os campos com * são obrigatórios !</p>
+	<p>Os campos com <em>*</em> são obrigatórios !</p>
 
 		<br/>
 
@@ -48,9 +48,11 @@
 			</label><br/>
 			<input type="text" name="telefone2" id="telefone2" maxlength="9"><br/><br/>
 
-			<button type="submit" name="btn-enviar"> Adicionar novo cliente</button>
-			<a href="home.php">Cancelar cadastro</a>
-
+			<button type="submit" class="btn-adicionar" name="btn-enviar">
+				<a href=""> Adicionar Novo Cliente</a></button>
+			<button class="btn-cancelar">
+				<a href="home.php">Cancelar Cadastro</a>
+			</button>
 		</fieldset>
 	</form>
 </body>

@@ -4,9 +4,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+/*HOME.PHP - esta parte do código estliza mais a parte do meu home.php*/
 
-/*Estilizando todo o meu body, definindo minha fonte e meu display como flex para ficar centralizado e em colunas
-*/
+/*Estilizando todo o meu body, definindo minha fonte e meu display como flex para ficar centralizado e em colunas*/
 body{
 	display: flex;
 	flex-direction: column;
@@ -62,14 +62,29 @@ th, td {
 	text-decoration: none;
 	color: #000;
 }
-/*
-a{
-	padding: 10px;
-	width: 120px;
-	height: 50px;
-	border-radius: 10px;
-	background-color: skyblue;
+
+/*ADICIONAR.PHP - esta parte do código estliza mais a parte do meu home.php*/
+em{
+	color: #ffa500;
+}
+fieldset{
+	padding: 50px;
 }
 input{
-	width: 300px;
+	margin: 10px;
+	width: 600px;
+	height: 30px;
+	border-bottom: 1px solid #000;
+}
+.btn-cancelar{
+	padding: 10px;
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: #dd2417;	
+	text-align: center;
+}
+.btn-cancelar a{
+	text-decoration: none;
+	color: #000;
 }
