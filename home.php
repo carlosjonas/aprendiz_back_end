@@ -8,6 +8,7 @@
 <head>
 	<title>CRUD</title>
 	<meta charset="utf-8"/>
+	<link rel="shortcut icon" href="assets/img/favicon.ico" />
 	<!--Adicionando minha linkagem externa de css,js e de icones do font-awesome-->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 	<meta id="viewport" name="viewport" content="width=device-width" />
@@ -58,7 +59,7 @@
 						<form action="acao/deletar.php" method="POST">
 							<!--input escondido para apontar pro meu deletar e saber qual registro estou pegando-->
 							<input type="hidden" name="id" value="<?php echo $dados['id']; ?>">
-							<!--Meu botão de Deletar-->
+							<!--Meu botão de Deletar, só confirmo com um return pra não acontecer de clicarem sem querer-->
 							<button class="icone-deletar" type="submit" onclick="return confirm('Tem certeza que deseja editar este registro?')" name="btn-deletar">
 								<i class="fas fa-trash-alt"></i>
 							</button>

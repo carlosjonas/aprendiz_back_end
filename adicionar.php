@@ -3,6 +3,7 @@
 <head>
 	<title>CRUD</title>
 	<meta charset="utf-8"/>
+	<link rel="shortcut icon" href="assets/img/favicon.ico" />
 	<!--Adicionando minha linkagem externa de css,js e de icones do font-awesome-->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 	<meta id="viewport" name="viewport" content="width=device-width" />
