@@ -2,6 +2,7 @@
 	//Linkando com a conexão
 	require_once 'acao/conexao.php';
 
+	//Verificando qual o id que vou pegar no meu editar
 	if (isset($_GET['id'])) {
 		$id = mysqli_escape_string($conexao, $_GET['id']);
 
@@ -16,7 +17,8 @@
 <html>
 <head>
 	<title>CRUD</title>
-	<meta charset="utf-8">
+	<meta charset="utf-8"/>
+	<!--Adicionando minha linkagem externa de css,js e de icones do font-awesome-->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 	<meta id="viewport" name="viewport" content="width=device-width" />
 	<script type="text/javascript" src="assets/js/mascaras.js">
@@ -26,10 +28,14 @@
 <body>
 	<h1>Editar CLientes</h1>
 
+	<!--Mostarando pro meu usuário que possuem campos obrigatórios-->
 	<p>Os campos com <em>*</em> são obrigatórios !</p>
 
-		<br/>
+	<br/>
 
+	<!--Criando meu formulário de cadastro, colocando o label e logo após seu determinado input-->
+	<!--Em alguns campos do meu formulário colquei mascaras com o js-->
+	<!--Aqui no Editar já vem com os dados do banco-->
 	<form method="POST" action="acao/alterar.php">
 		<fieldset>
 			<input type="hidden" name="id" value="<?php echo $dados['id'];?>"/>
@@ -68,8 +74,9 @@
 			</label><br/>
 			<input type="text" name="telefone2" id="telefone2" onkeyup="mascara_telefone2()" maxlength="14" placeholder="(99)99999-9999"  value="<?php echo $dados['telefone2'];?>"><br/><br/>
 			
-
-			<button type="submit" class="btn-adicionar" name="btn-editar"> Editar cliente</button>
+			<!--Botão de edição de usuário-->
+			<button type="submit" class="btn-adicionar" name="btn-editar"> Editar Usuário</button>
+			<!--Botão de cancelar edição de usuário-->
 			<button class="btn-cancelar">
 				<a href="home.php">Cancelar Edição</a>
 			</button>

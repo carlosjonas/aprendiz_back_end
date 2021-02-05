@@ -1,3 +1,5 @@
+/*Meu css está dividido em duas partes , no HOME e ADICIONAR.PHP|EDITAR.PHP que são basicamente as 3 páginas que tenho no crud, a adicionar e alterar estão mais juntas já que são basicamente a mesma estrutura pras 2*/
+
 /*Deixando os layouts de navegadores como padrão*/
 *{
 	margin: 0;
@@ -14,27 +16,34 @@ body{
 	align-items: center;
 	font-family: Verdana;
 	font-size: 16px;
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
+/*Definindo as margens dos meus títulos pra não ficarem colados na borda da página e no form*/
 h1{
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
+/*Definindo a borda do meu form*/
 table, th, td {
 	border-bottom: 1px solid #000;
 }
 
+/*Um padding pra que a tabela não fique tão colada*/
 th, td {
 	padding: 10px;
 }
 
+/*Minha classe do botão editar onde digo seu tamanho, cor e arredondamento*/
 .icone-editar{
 	width: 30px;
 	height: 30px;
 	background-color: #ffa500;
 	border-radius: 15px;
 }
+
+/*Minha classe do botão editar onde coloco as mesmas propriedades acima , só coloco o cursor pointer pra ficar bonitinho na passagem do mouse*/
 .icone-deletar{
 	width: 30px;
 	height: 30px;
@@ -42,6 +51,8 @@ th, td {
 	border-radius: 15px;
 	cursor: pointer;
 }
+
+/*Tirando a decoração do link dos meus botões e colocando umas cor cinza*/
 .icone-editar a,
 .icone-deletar a{
 	text-decoration: none;
@@ -59,24 +70,31 @@ th, td {
 	text-align: center;
 	cursor: pointer;
 }
+/*Tirando a decoração do link e colocando a cor do texto*/
 .btn-adicionar a{
 	text-decoration: none;
 	color: #000;
 }
 
-/*ADICIONAR.PHP e ADICIONAR.PHP - esta parte do código estliza mais a parte do meu adicionar.php e o editar.php*/
+/* ADICIONAR.PHP|EDITAR.PHP - esta parte do código estliza mais a parte do meu adicionar.php e o editar.php  que são bastante parecidos*/
+
+/* Coloquei o * de outra cor pro usuário perceber que os campos são obrigatórios*/
 em{
 	color: #ffa500;
 }
+/* Espaçamento do meu fieldset pra não dicar colado com os inputs*/
 fieldset{
 	padding: 50px;
 }
+/* Definindo tamanho e a borda dos meus inputs*/
 input{
 	margin: 10px;
 	width: 600px;
 	height: 30px;
 	border-bottom: 1px solid #000;
 }
+
+/*Estilizando a altura borda, cor e centralização do meu botão cancelar*/
 .btn-cancelar{
 	padding: 10px;
 	width: 200px;
@@ -85,6 +103,7 @@ input{
 	background-color: #dd2417;	
 	text-align: center;
 }
+/*Tirando a decoração do link e trocando a cor da fonte*/
 .btn-cancelar a{
 	text-decoration: none;
 	color: #000;
